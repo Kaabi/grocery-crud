@@ -88,10 +88,10 @@
 	$lang['list_more'] = 'المزيد';
 
 	/* Added in version 1.5.6 */
-	$lang['list_search_column'] = 'Search {column_name}';
+	$lang['list_search_column'] = '{column_name} بحث';
 
 	/* Added in version 1.5.8 */
-	$lang['alert_delete_multiple'] = 'Are you sure that you want to delete those {items_amount} items?';
+	$lang['alert_delete_multiple'] = 'فقرات {items_amount} هل انت متأكد بحذف عدد';
 
-	$lang['alert_delete_multiple_one'] = 'Are you sure that you want to delete this 1 item?';
+	$lang['alert_delete_multiple_one'] = 'هل انت متأكد بحذف هذه الفقرة ؟';
 
