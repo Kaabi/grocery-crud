@@ -1274,7 +1274,7 @@ class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
 	protected function get_list()
 	{
 		if(!empty($this->order_by))
-			$this->basic_model->order_by($this->order_by[0],$this->order_by[1]);
+            		$this->basic_model->order_by($this->order_by[0], $this->order_by[1], $this->order_by[2]);
 
 		if(!empty($this->where))
 			foreach($this->where as $where)
@@ -4331,13 +4331,12 @@ class Grocery_CRUD extends grocery_CRUD_States
 		return $this->read_fields;
 	}
 
-	public function order_by($order_by, $direction = 'asc')
-	{
-		$this->order_by = array($order_by,$direction);
+	public function order_by($order_by, $direction = 'asc', $escape = NULL)
+    	{
+        	$this->order_by = array($order_by, $direction, $escape);
 
-		return $this;
-	}
-
+        	return $this;
+    	}
 	public function where($key, $value = NULL, $escape = TRUE)
 	{
 		$this->where[] = array($key,$value,$escape);
